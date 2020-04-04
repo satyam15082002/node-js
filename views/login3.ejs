@@ -1,0 +1,36 @@
+<html>
+    <head>
+      <style>
+          body{
+              background-color: red;
+              color: black;
+          }
+        #l{
+            padding:20px;
+            margin-left:30%;
+            margin-top: 10%;
+            background-color: white;
+            max-width: 300px;
+            max-height: max-content;
+        }
+        input{
+            padding: 3px;
+            margin: 2px;
+        }
+      </style>
+    </head>
+    <body>
+        <div id="l">
+        <h1>login</h1>
+<form action="/signup" method="POST">
+<input type="text" name="username" placeholder="username" required/>
+<br>
+<input type="email" name="email" placeholder="email" required/>
+<br>
+<input type="password" name="pass" placeholder="password" required/>
+<input type="submit" value="signup"/>
+</form>
+        </div>
+        <h1><a href="/signup">signin</a></h1>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    letter-spacing: 0.6;
+    word-spacing: 1.0;
+}
+ul {
+    list-style:none;
+    text-align: center;
+    float:left;
+    background-color: rgb(184, 73, 95);
+    height:60px;
+    width:100%;
+  
+}
+ li {
+    display:inline;
+    font-size: 3.0em;
+    padding-left: 1.5em;
+    padding-top: 5px; 
+    }
+    p[footer]{
+        text-align: center;
+    }
+    .footer{
+        background-color: black;
+    margin: 5px;    
+    }
+    a:link
+    {
+        text-decoration: none;
+    }
+a{
+    color:black;
+}
+a:active{
+    color: red;
+}

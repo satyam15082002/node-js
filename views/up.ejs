@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link href="css/o.css" rel="stylesheet" type="text/css"/>
+    <style>
+       div{
+        padding: 4px;
+        border: 2px  solid;
+        max-width: 300px;
+        max-height: 350px;
+        float: left;
+        
+    }
+  
+</style>
+</head>
+<body>
+  
+    <ul>
+        <li><a href="login2">home</a></li>
+     <li><a href="/upload">upload</a></li>
+     <li><a href="/logout">logout</a></li>
+     <li><a href="/setting">setting</a></li> 
+    </ul>
+<h1>Hello world</h1>
+<% for(var i=o.length-1;i>=0;i--){ %>
+    <div>
+    <% if(o[i].includes(".mp4")==true) { %>
+        <span><%= id[i] %></span>
+    <video src="<%= o[i] %>" width="280"height="300px" controls preload ></video>
+    <% } else{ %>
+        <span><%= id[i] %></span>
+        <img src="<%= o[i] %>" width="300px" height="300px" />
+<% } %>
+    </div>
+    <% } %>
+</body>
+</html>

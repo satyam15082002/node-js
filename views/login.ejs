@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <link href="css/c.css" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+<div id="main">
+<div id="l">
+<fieldset>
+<legend><h1>login</h1></legend>
+<form action="/login" method="POST">
+<input type="email" name="email" placeholder="email" required/>
+<br>
+<input type="password" name="pass" placeholder="password" required/>
+<input type="submit" value="login" id="submit"/>
+</form>
+</fieldset>
+<% if(a==1) {%>
+<h1>invalid email and password</h1>
+<% } %>
+        </div>
+        <h1><a href="/">signin</a></h1>
+</div>
+
+</body> 
+</html>
