@@ -137,8 +137,8 @@ app.post('/upload',function(req,res){
     }
 });
 
-
-app.listen(1000, function(err){
+var PORT =process.env.PORT || 1000;
+app.listen(PORT, function(err){
     if(!err){
         console.log("servver started");
     }
